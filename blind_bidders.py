@@ -15,7 +15,7 @@ def find_highest_bidders(bidders_record):
 
 # More refined and shorter Version of the above function can be written as below -->
 """
-    def find_highest_bidders(bidders_record):
+def find_highest_bidders(bidders_record):
     winner = max(bidders_record, key=bidders_record.get)
     highest_bid = bidders_record[winner]
     print(f"The winner is {winner} with a bid of ${highest_bid}")
