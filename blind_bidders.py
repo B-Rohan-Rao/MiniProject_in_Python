@@ -25,14 +25,17 @@ while not bidding_finished:
     name = input("Enter your name \n")
     price = int(input("What is your bid? \n"))
     bids[name] = price
-    should_continue = input("Are there more bidders? \n")
-    if should_continue == "no":
+    should_continue = input("Are there more bidders (Type 'y' or 'n')? \n")
+    if should_continue == "n":
         find_highest_bidders(bids)
         bidding_finished = True
-    elif should_continue == "yes":
+    elif should_continue == "y":
         print("\n" * 100)
     else:
         print("Not valid")
+        find_highest_bidders(bids)
+        bidding_finished = True
+        
 
 """
 Explanation for the refined function.
