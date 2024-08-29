@@ -6,12 +6,12 @@ screen = Screen()
 screen.setup(width=900, height=800)
 
 # Set up turtles
-colors = ["red", "blue", "green", "orange", "purple"]
-names = ["Cruze", "Chick", "Lyla", "Walle", "McQueen"]
+colors = ["red", "blue", "green", "orange", "purple", "brown"]
+names = ["Cruze", "Chick", "Lyla", "Walle", "McQueen", "Matter"]
 turtles = []
 
 # Creating turtles and setting up initial positions
-for index in range(5):
+for index in range(6):
     new_turtle = Turtle(shape="turtle")
     new_turtle.color(colors[index])
     new_turtle.penup()
