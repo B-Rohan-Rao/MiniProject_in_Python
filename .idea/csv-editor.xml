@@ -10,20 +10,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\19_flash card project\data\french_words.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\19_flash card project\data\words to learn.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
       </map>
     </option>
   </component>
