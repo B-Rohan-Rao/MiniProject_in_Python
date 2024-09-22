@@ -2,8 +2,8 @@ import datetime as dt
 import smtplib
 import random
 
-my_email = "bb2304176@gmail.com"
-password = "qomf hbya fpnp rzvt"
+MY_EMAIL = "___YOUR_EMAIL_HERE____"
+MY_PASSWORD = "___YOUR_PASSWORD_HERE___"
 weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 now = dt.datetime.now()
@@ -14,10 +14,10 @@ if day == 0:
     try:
         with open("quotes.txt") as data:
             quotes = data.readlines()
-        with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+        with smtplib.SMTP("__YOUR_SMTP_ADDRESS_HERE___") as connection:
             connection.starttls()
-            connection.login(user=my_email, password=password)
-            connection.sendmail(from_addr=my_email, to_addrs="bumblebee33@myyahoo.com", msg=random.choice(quotes))
+            connection.login(user=MY_EMAIL, password=MY_PASSWORD)
+            connection.sendmail(from_addr=MY_EMAIL, to_addrs="RECIEVER_EMAIL@gmail.com", msg=random.choice(quotes))
 
     except FileNotFoundError:
         print("The file quotes.txt was not found.")

@@ -3,8 +3,8 @@ import pandas as pd
 from random import randint
 import smtplib
 
-MY_EMAIL = "bb2304176@gmail.com"
-PASSWORD = "qomf hbya fpnp rzvt"
+MY_EMAIL = "___YOUR_EMAIL_HERE____"
+MY_PASSWORD = "___YOUR_PASSWORD_HERE___"
 
 today = (dt.datetime.now().month, dt.datetime.now().day)
 
@@ -18,9 +18,9 @@ if today in new_dict:
         contents = letter_file.read()
         contents = contents.replace("[NAME]", birthday_person["name"])
 
-    with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+    with smtplib.SMTP("__YOUR_SMTP_ADDRESS_HERE___") as connection:
         connection.starttls()
-        connection.login(user=MY_EMAIL, password=PASSWORD)
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         connection.sendmail(
             from_addr=MY_EMAIL,
             to_addrs=birthday_person["email"],
