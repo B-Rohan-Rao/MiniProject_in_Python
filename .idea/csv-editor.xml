@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\16_Nato alphabets\nato_phonetic_alphabet.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\19_ Flash Card\data\french_words.csv">
           <value>
             <Attribute>
