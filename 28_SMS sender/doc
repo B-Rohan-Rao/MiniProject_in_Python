@@ -1,0 +1,4 @@
+twilio is an api that is used in order to get the functionality of sending sms to out mobile number from the given
+twilio mobile number. This is then imported in our file in form of module in order to use the "Client" class.
+This client class is helpful to send messages.
+we can get the auth_token, account_sid and the twilio mobile number form the twilio dashboard itself when we login to it.
