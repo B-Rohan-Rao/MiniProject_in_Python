@@ -1,6 +1,6 @@
 from twilio.rest import Client
 
-# Uncomment the following 2 lines and add your details-->
+
 ACCOUNT_SID = "YOUR_ACCOUNT_SID"
 AUTH_TOKEN = "YOUR_ACCOUNT_TOKEN"
 
