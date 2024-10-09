@@ -1,8 +1,8 @@
 import requests
 from datetime import datetime
 
-AMADEUS_API_KEY = "e0SOJpCDrZTcHLdYi31BZz6EafgI0WS6"
-AMADEUS_API_SECRET = "oSqztTWD0PIEgmOm"
+AMADEUS_API_KEY = "YOUR_API_KEY"
+AMADEUS_API_SECRET = "YOUR_SECRET_KEY"
 FLIGHT_ENDPOINT = "https://test.api.amadeus.com/v2/shopping/flight-offers"
 TOKEN_ENDPOINT = "https://test.api.amadeus.com/v1/security/oauth2/token"
 IATA_ENDPOINT = "https://test.api.amadeus.com/v1/reference-data/locations/cities"
