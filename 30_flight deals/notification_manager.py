@@ -1,8 +1,8 @@
 from twilio.rest import Client
 
 # Uncomment the following 2 lines and add your details-->
-# ACCOUNT_SID = "YOUR_ACCOUNT_SID"
-# AUTH_TOKEN = "YOUR_ACCOUNT_TOKEN"
+ACCOUNT_SID = "YOUR_ACCOUNT_SID"
+AUTH_TOKEN = "YOUR_ACCOUNT_TOKEN"
 
 class NotificationManager:
     def __init__(self):
@@ -20,9 +20,9 @@ class NotificationManager:
         """
         try:
             message = self.client.messages.create(
-                from_="+15109014405",
+                from_="YOUR_TWILIO_PHONE_NUMBER",
                 body=message_body,
-                to="+91 95088 84063"
+                to="YOUR_PHONE_NUMER"
             )
             print(f"Message sent successfully with SID: {message.sid}")
         except Exception as e:
