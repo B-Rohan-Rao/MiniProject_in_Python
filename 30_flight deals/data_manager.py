@@ -2,10 +2,12 @@ from pprint import pprint
 import requests
 from requests.auth import HTTPBasicAuth
 
-SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/90383c42299726f435a4729f32d694c4/flightDeals/prices"
-SHEETY_USRERNAME = "YOUR_SHEETY_USER_NAME"
-SHEETY_PASSWORD = "YOUR_SHEETY_PASSWORD"
-AUTORIZATION_HEADER = "YOUR_SHEETY_AUTORIZATION_HEADER"
+
+# Uncomment the following lines and add your details.-->
+# SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/90383c42299726f435a4729f32d694c4/flightDeals/prices"
+# SHEETY_USRERNAME = "YOUR_SHEETY_USER_NAME"
+# SHEETY_PASSWORD = "YOUR_SHEETY_PASSWORD"
+# AUTORIZATION_HEADER = "YOUR_SHEETY_AUTORIZATION_HEADER"
 
 
 class DataManager:
