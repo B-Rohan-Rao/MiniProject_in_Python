@@ -7,7 +7,7 @@ my_email = "YOUR-EMAIL"
 password = "YOUR-PASSOWORD"
 
 # URL for the product page on Amazon
-URL = "Product-URL"
+URL = "https://www.amazon.com/dp/B075CYMYK6?psc=1&ref_=cm_sw_r_cp_ud_ct_FM9M699VKHTT47YD50Q6"
 
 # Define headers to mimic a real browser visit and avoid bot detection by Amazon
 header = {
@@ -22,7 +22,8 @@ header = {
     "Sec-Fetch-User": "?1",
     "Sec-Gpc": "1",
     "Upgrade-Insecure-Requests": "1",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 "
+                  "Safari/537.36 OPR/114.0.0.0",
 }
 
 # or you can add minimal header
@@ -56,7 +57,7 @@ my_price = 100.0
 
 if available_price < my_price:
     # Prepare the alert message with the product title, current price, and URL
-    message = f"{title} is on sale. Price: ${available_price}"
+    message = f"{title} is on sale. Price: ${available_price}\n(MESSAGE FROM BEAUTIFULSOUP)"
 
     # Establish an SMTP connection to Gmail's server
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
