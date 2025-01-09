@@ -8,6 +8,6 @@ driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://www.amazon.com")
 
 
-# driver.close()  # Closes the tab as soon as it gets loaded
+# driver1.close()  # Closes the tab as soon as it gets loaded
 driver.quit()  # Shut down the entire browser.
 

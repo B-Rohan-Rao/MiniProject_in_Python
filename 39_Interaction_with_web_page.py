@@ -17,5 +17,5 @@ last_name.send_keys("Rao")
 email.send_keys("Rohan@gmail.com", Keys.ENTER)  # This keys.enter functions as pressing enter button.
 
 
-# submit = driver.find_element(By.CSS_SELECTOR, "form button")
+# submit = driver1.find_element(By.CSS_SELECTOR, "form button")
 # submit.click()  #This is another way which we can locate the button in the page and click it

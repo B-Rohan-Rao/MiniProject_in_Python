@@ -9,8 +9,8 @@ chrome_driver_path = "/Users/philippmuellauer/Development/chromedriver"
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach", True)
 
-# driver = webdriver.Chrome(executable_path=chrome_driver_path)
-# driver = webdriver.Chrome()
+# driver1 = webdriver.Chrome(executable_path=chrome_driver_path)
+# driver1 = webdriver.Chrome()
 driver = webdriver.Chrome(options=chrome_options)
 
 def test_eight_components():
@@ -27,7 +27,7 @@ def test_eight_components():
     assert value == "Received!"
 
     # Closes Chrome
-    # driver.quit()
+    # driver1.quit()
     driver.close()
 
 

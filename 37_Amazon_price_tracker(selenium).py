@@ -29,7 +29,7 @@ print(product_title)
 available_price = float(f"{price_dollar}.{price_cents}")
 print(available_price)
 
-# Close the browser tab (driver.quit() would close the entire browser session)
+# Close the browser tab (driver1.quit() would close the entire browser session)
 driver.quit()
 
 # Define the price threshold for sending an alert
